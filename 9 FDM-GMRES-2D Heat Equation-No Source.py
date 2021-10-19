@@ -85,8 +85,11 @@ def main():
 
     plt.figure(figsize=(7, 7))
     plot = plt.imshow(solution)  # Plotting the system
-    plt.colorbar()
     plot.set_cmap("plasma")
+    plt.xlabel("440 cm")
+    plt.ylabel("440 cm")
+    cbar = plt.colorbar()
+    cbar.set_label("temperature gradient")
     plt.show()
 
 
